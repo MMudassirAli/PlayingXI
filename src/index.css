@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #AEF554;
+}
+.background-overlay{
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20231017/pngtree-icc-cricket-world-match-background-image_13943187.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-position: center;
+    z-index: -1;
+}
+.background-overlay::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.content{
+    z-index: 222;
+    position: relative;
+}
+.photo{
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+.card{
+    background-color: #F2FDE4;
+    overflow: hidden;
+    background: linear-gradient(135deg, 
+    rgba(59, 177, 67, 1) 60%,    /* Parrot Green */
+    rgba(255, 255, 0, 0.8) 80%,  /* Yellow (less, with some transparency) */
+    rgba(255, 255, 255, 1) 100%  /* White */
+);
+
+
+}
